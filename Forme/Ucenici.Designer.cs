@@ -92,7 +92,7 @@ namespace Knjiznicaaaaa.Forme
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.lbUcenici);
             this.Name = "Ucenici";
-            this.Text = "Ucenici";
+            this.Text = "Učenici";
             this.Load += new System.EventHandler(this.Ucenici_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
