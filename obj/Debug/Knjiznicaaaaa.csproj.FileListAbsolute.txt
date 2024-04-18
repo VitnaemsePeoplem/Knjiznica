@@ -1,0 +1,13 @@
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.csproj.AssemblyReference.cache
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Forme.DetaljiPosudbe.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Forme.DetaljiUcenika.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Forme.Knjige.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Forme.frmKnjiznica.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Forme.Ucenici.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.Properties.Resources.resources
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.csproj.GenerateResource.cache
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.csproj.CoreCompileInputs.cache
+C:\Users\filip\source\repos\Knjiznicaaaaa\bin\Debug\Knjiznicaaaaa.exe
+C:\Users\filip\source\repos\Knjiznicaaaaa\bin\Debug\Knjiznicaaaaa.pdb
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.exe
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.pdb

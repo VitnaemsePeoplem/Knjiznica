@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Knjiznicaaaaa.Forme;
 
 namespace Knjiznicaaaaa
 {
@@ -15,7 +16,7 @@ namespace Knjiznicaaaaa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmKnjiznica());
         }
     }
 }

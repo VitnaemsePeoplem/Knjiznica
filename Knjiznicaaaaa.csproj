@@ -43,14 +43,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forme\DetaljiPosudbe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forme\DetaljiPosudbe.Designer.cs">
+      <DependentUpon>DetaljiPosudbe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DetaljiUcenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DetaljiUcenika.Designer.cs">
+      <DependentUpon>DetaljiUcenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Knjige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Knjige.Designer.cs">
+      <DependentUpon>Knjige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Knjiznica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Knjiznica.Designer.cs">
+      <DependentUpon>Knjiznica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Ucenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ucenici.Designer.cs">
+      <DependentUpon>Ucenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Knjiga.cs" />
+    <Compile Include="Model\PodatkovniKontekst.cs" />
+    <Compile Include="Model\Posudba.cs" />
+    <Compile Include="Model\Ucenik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\DetaljiPosudbe.resx">
+      <DependentUpon>DetaljiPosudbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DetaljiUcenika.resx">
+      <DependentUpon>DetaljiUcenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Knjige.resx">
+      <DependentUpon>Knjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Knjiznica.resx">
+      <DependentUpon>Knjiznica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Ucenici.resx">
+      <DependentUpon>Ucenici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

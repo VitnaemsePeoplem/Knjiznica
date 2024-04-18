@@ -26,7 +26,7 @@ namespace Knjiznicaaaaa.Model
 
             if (rez == 0)
             {
-                rez = int rez = this.Naslov.CompareTo(((Knjiga)obj).Naslov);
+                rez =this.Naslov.CompareTo(((Knjiga)obj).Naslov);
             }
 
             return rez;

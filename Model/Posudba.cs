@@ -27,7 +27,7 @@ namespace Knjiznicaaaaa.Model
             return this.DatumPosudbe.ToShortDateString()
             + " - " + this.DatumVracanja.ToShortDateString()
             + " : " + this.Knjiga.ToString()
-            + " --> " this.Ucenik.ToString();
+            + " --> " + this.Ucenik.ToString();
         }
 
         public int CompareTo(object obj)
