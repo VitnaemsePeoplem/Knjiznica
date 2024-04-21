@@ -61,11 +61,11 @@
     <Compile Include="Forme\Knjige.Designer.cs">
       <DependentUpon>Knjige.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forme\Knjiznica.cs">
+    <Compile Include="Forme\frmKnjiznica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forme\Knjiznica.Designer.cs">
-      <DependentUpon>Knjiznica.cs</DependentUpon>
+    <Compile Include="Forme\frmKnjiznica.Designer.cs">
+      <DependentUpon>frmKnjiznica.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\Ucenici.cs">
       <SubType>Form</SubType>
@@ -88,8 +88,8 @@
     <EmbeddedResource Include="Forme\Knjige.resx">
       <DependentUpon>Knjige.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forme\Knjiznica.resx">
-      <DependentUpon>Knjiznica.cs</DependentUpon>
+    <EmbeddedResource Include="Forme\frmKnjiznica.resx">
+      <DependentUpon>frmKnjiznica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\Ucenici.resx">
       <DependentUpon>Ucenici.cs</DependentUpon>

@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace Knjiznicaaaaa.Forme
 {
-    public partial class Ucenici : Form
+    public partial class frmKnjiznica : Form
     {
         PodatkovniKontekst kontekst;
-        public Ucenici(PodatkovniKontekst kontekst)
+        public frmKnjiznica()
         {
             InitializeComponent();
-            this.kontekst = kontekst;
         }
 
-        private void Ucenici_Load(object sender, EventArgs e)
+        private void frmKnjiznica_Load(object sender, EventArgs e)
         {
-
+            kontekst = new PodatkovniKontekst();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void uceniciToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Ucenici formaUcenici = new Ucenici(this.kontekst);
+            formaUcenici.ShowDialog();
         }
     }
 }
