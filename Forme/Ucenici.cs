@@ -21,12 +21,13 @@ namespace Knjiznicaaaaa.Forme
 
         private void Ucenici_Load(object sender, EventArgs e)
         {
-            lbUcenici.Items.Clear();
-            this.kontekst.Ucenici.Sort();
-            foreach(Ucenik trenutniUcenik in kontekst.Ucenici)
-            {
-                lbUcenici.Items.Add(trenutniUcenik);
-            }
+            OsvjeziUcenike();
+        }
+
+        private void OsvjeziUcenike()
+        {
+            Helper.PrikaziListuUListboxu<Ucenik>(this.kontekst.Ucenici, lbUcenici);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
