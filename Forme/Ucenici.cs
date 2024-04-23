@@ -34,5 +34,17 @@ namespace Knjiznicaaaaa.Forme
         {
 
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+             DetaljiUcenika detaljiUcenika = new DetaljiUcenika();
+
+
+            if (detaljiUcenika.ShowDialog() == DialogResult.OK)
+            {
+                this.kontekst.Ucenici.Add(detaljiUcenika.Ucenik);
+                OsvjeziUcenike();
+            }
+        }
     }
 }

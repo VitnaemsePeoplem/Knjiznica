@@ -166,6 +166,7 @@ namespace Knjiznicaaaaa.Forme
             this.Controls.Add(this.lbUcenici);
             this.Name = "DetaljiPosudbe";
             this.Text = "DetaljiPosudbe";
+            this.Load += new System.EventHandler(this.DetaljiPosudbe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

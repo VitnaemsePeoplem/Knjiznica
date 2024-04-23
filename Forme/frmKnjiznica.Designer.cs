@@ -50,16 +50,17 @@ namespace Knjiznicaaaaa.Forme
             // 
             // btnPosudi
             // 
-            this.btnPosudi.Location = new System.Drawing.Point(474, 46);
+            this.btnPosudi.Location = new System.Drawing.Point(474, 89);
             this.btnPosudi.Name = "btnPosudi";
             this.btnPosudi.Size = new System.Drawing.Size(109, 39);
             this.btnPosudi.TabIndex = 1;
             this.btnPosudi.Text = "Posudi";
             this.btnPosudi.UseVisualStyleBackColor = true;
+            this.btnPosudi.Click += new System.EventHandler(this.btnPosudi_Click);
             // 
             // btnUredi
             // 
-            this.btnUredi.Location = new System.Drawing.Point(474, 145);
+            this.btnUredi.Location = new System.Drawing.Point(474, 198);
             this.btnUredi.Name = "btnUredi";
             this.btnUredi.Size = new System.Drawing.Size(109, 39);
             this.btnUredi.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace Knjiznicaaaaa.Forme
             // 
             // btnVrati
             // 
-            this.btnVrati.Location = new System.Drawing.Point(474, 248);
+            this.btnVrati.Location = new System.Drawing.Point(474, 314);
             this.btnVrati.Name = "btnVrati";
             this.btnVrati.Size = new System.Drawing.Size(109, 39);
             this.btnVrati.TabIndex = 3;
@@ -94,6 +95,7 @@ namespace Knjiznicaaaaa.Forme
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // uceniciToolStripMenuItem
             // 

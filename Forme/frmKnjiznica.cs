@@ -28,5 +28,15 @@ namespace Knjiznicaaaaa.Forme
             Ucenici formaUcenici = new Ucenici(this.kontekst);
             formaUcenici.ShowDialog();
         }
+
+        private void btnPosudi_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

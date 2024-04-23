@@ -52,6 +52,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnDodaj.TabIndex = 1;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnUredi
             // 
