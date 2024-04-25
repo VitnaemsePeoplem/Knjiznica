@@ -40,9 +40,10 @@ namespace Knjiznicaaaaa.Forme
             }
             else
             {
-                if(this.Ucenik==null)
+                if (this.Ucenik == null)
                 {
                     this.Ucenik = new Ucenik();
+                }
                     this.Ucenik.OIB = tbOIB.Text;
                     this.Ucenik.Ime = tbIme.Text;
                     this.Ucenik.Prezime = tbPrezime.Text;
@@ -51,7 +52,7 @@ namespace Knjiznicaaaaa.Forme
                     this.Ucenik.Razred = int.Parse(cbRazred.Text);
 
                     this.DialogResult = DialogResult.OK;
-                }
+                
             }
         }
     }

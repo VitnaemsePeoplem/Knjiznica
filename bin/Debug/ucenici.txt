@@ -1,3 +1,2 @@
-54455463463|Antun|Budes|Vukovarska|0977554372|4
-56576575656|Marko|Budas|Istarska|0994024040|4
-54565554626|Luka|Krizma|Backa|09122442334|4
+56576575656  |  Marko  |  Budas  |  Istarska  |  0994024040  | 4
+54455463463  |  Antun  |  Budes  |  Vukovarska  |  0977554372  | 4

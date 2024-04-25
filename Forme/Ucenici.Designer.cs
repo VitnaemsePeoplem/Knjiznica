@@ -72,6 +72,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnObrisi.TabIndex = 3;
             this.btnObrisi.Text = "Obriši";
             this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // label1
             // 

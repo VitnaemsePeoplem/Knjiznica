@@ -25,6 +25,13 @@ namespace Knjiznicaaaaa.Model
             SpremiUcenike();
         }
 
+        public void BrisiUcenika(Ucenik ucenik)
+        {
+            this.Ucenici.Remove(ucenik);
+            SpremiUcenike();
+        }
+
+
         public List<Ucenik> UcitajUcenike()
         {
             List<Ucenik> rezultat = new List<Ucenik>();
