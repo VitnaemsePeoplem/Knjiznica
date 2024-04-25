@@ -32,7 +32,21 @@ namespace Knjiznicaaaaa.Forme
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (lbUcenici.SelectedItem == null)
+            {
+                MessageBox.Show("Molimte odaberi ucenika");
+            }
+            else
+            {
+                DetaljiUcenika detaljiUcenika = new DetaljiUcenika();
+                detaljiUcenika.Ucenik = (Ucenik)lbUcenici.SelectedItem;
 
+                if(detaljiUcenika.ShowDialog() == DialogResult.OK)
+                {
+                    this.kontekst.SpremiUcenike();
+                    OsvjeziUcenike();
+                }
+            }
         }
 
         private void btnDodaj_Click(object sender, EventArgs e)
@@ -42,7 +56,7 @@ namespace Knjiznicaaaaa.Forme
 
             if (detaljiUcenika.ShowDialog() == DialogResult.OK)
             {
-                this.kontekst.Ucenici.Add(detaljiUcenika.Ucenik);
+                this.kontekst.DodajUcenika(detaljiUcenika.Ucenik);
                 OsvjeziUcenike();
             }
         }

@@ -20,7 +20,15 @@ namespace Knjiznicaaaaa.Forme
 
         private void DetaljiUcenika_Load(object sender, EventArgs e)
         {
-
+            if (this.Ucenik != null)
+            {
+                tbOIB.Text = this.Ucenik.OIB;
+                tbIme.Text = this.Ucenik.Ime;
+                tbPrezime.Text = this.Ucenik.Prezime;
+                tbAdresa.Text = this.Ucenik.Adresa;
+                tbTelefon.Text = this.Ucenik.Telefon;
+                cbRazred.Text = this.Ucenik.Razred.ToString();
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
