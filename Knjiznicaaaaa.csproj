@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetaljiKnjige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiKnjige.Designer.cs">
+      <DependentUpon>DetaljiKnjige.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DetaljiPosudbe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Model\Ucenik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetaljiKnjige.resx">
+      <DependentUpon>DetaljiKnjige.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DetaljiPosudbe.resx">
       <DependentUpon>DetaljiPosudbe.cs</DependentUpon>
     </EmbeddedResource>
