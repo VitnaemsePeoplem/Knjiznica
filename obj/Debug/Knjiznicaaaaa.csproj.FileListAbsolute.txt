@@ -11,3 +11,4 @@ C:\Users\filip\source\repos\Knjiznicaaaaa\bin\Debug\Knjiznicaaaaa.exe
 C:\Users\filip\source\repos\Knjiznicaaaaa\bin\Debug\Knjiznicaaaaa.pdb
 C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.exe
 C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.pdb
+C:\Users\filip\source\repos\Knjiznicaaaaa\obj\Debug\Knjiznicaaaaa.DetaljiKnjige.resources

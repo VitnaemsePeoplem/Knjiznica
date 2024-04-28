@@ -14,9 +14,23 @@ namespace Knjiznicaaaaa.Model
         public List<Posudba> Posudbe;
 
         private string datUcenici = "ucenici.txt";
+        private string datKnjige = "knjige.txt";
         public PodatkovniKontekst()
         {
             Ucenici = UcitajUcenike();
+            Knjige = UcitajKnjige();
+        }
+
+        public void DodajKnjigu(Knjiga knjiga)
+        {
+            this.Knjige.Add(knjiga);
+            SpremiKnjige();
+        }
+
+        public void BrisiKnjigu(Knjiga knjiga)
+        {
+            this.Knjige.Remove(knjiga);
+            SpremiKnjige();
         }
 
         public void DodajUcenika(Ucenik ucenik)
@@ -31,6 +45,47 @@ namespace Knjiznicaaaaa.Model
             SpremiUcenike();
         }
 
+        public List<Knjiga> UcitajKnjige()
+        {
+            List<Knjiga> rezultat = new List<Knjiga>();
+
+            if (File.Exists(datKnjige))
+            {
+                using (StreamReader sr = new StreamReader(datKnjige))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string linija = sr.ReadLine();
+                        //djelimo liniju i definiramo objekt knjiga
+                        Knjiga trenutnaKnjiga = new Knjiga();
+                        string[] polja = linija.Split('|');
+                        trenutnaKnjiga.ISBN = polja[0];
+                        trenutnaKnjiga.Autor = polja[1];
+                        trenutnaKnjiga.Naslov = polja[2];
+                        trenutnaKnjiga.GodinaIzdanja = int.Parse(polja[3]); 
+                        trenutnaKnjiga.BrojPrimjeraka = int.Parse(polja[4]); 
+                        
+
+                        //Dodavanje u listu
+                        rezultat.Add(trenutnaKnjiga);
+                    }
+                }
+            }
+            return rezultat;
+        }
+
+        public void SpremiKnjige()
+        {
+            using (StreamWriter sw = new StreamWriter(datKnjige))
+            {
+                foreach (Knjiga k in this.Knjige)
+                {
+                    sw.WriteLine($"{k.ISBN} | {k.Autor} | {k.Naslov} | {k.GodinaIzdanja} | {k.BrojPrimjeraka} ");
+                }
+            }
+        }
+
+        
 
         public List<Ucenik> UcitajUcenike()
         {
@@ -65,11 +120,9 @@ namespace Knjiznicaaaaa.Model
         {
             using (StreamWriter sw = new StreamWriter(datUcenici))
             {
-                foreach(Ucenik trenutniUcenik in this.Ucenici)
+                foreach(Ucenik u in this.Ucenici)
                 {
-                    sw.WriteLine("{0} | {1} | {2} | {3} | {4} | {5}", trenutniUcenik.OIB, trenutniUcenik.Ime,
-                    trenutniUcenik.Prezime, trenutniUcenik.Adresa, trenutniUcenik.Telefon,
-                    trenutniUcenik.Razred);
+                    sw.WriteLine($"{u.OIB} | {u.Ime} |  {u.Prezime} |  {u.Adresa} |  {u.Telefon} | {u.Razred}");
                 }
             }
         }

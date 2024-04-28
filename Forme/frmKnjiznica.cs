@@ -38,5 +38,12 @@ namespace Knjiznicaaaaa.Forme
         {
 
         }
+
+        private void knjigeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Knjige formaKnjige = new Knjige(this.kontekst);
+            formaKnjige.ShowDialog();
+
+        }
     }
 }
