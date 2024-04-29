@@ -153,6 +153,7 @@ namespace Knjiznicaaaaa
             this.button1.TabIndex = 10;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DetaljiKnjige
             // 
@@ -172,6 +173,7 @@ namespace Knjiznicaaaaa
             this.Controls.Add(this.label1);
             this.Name = "DetaljiKnjige";
             this.Text = "DetaljiKnjige";
+            this.Load += new System.EventHandler(this.DetaljiKnjige_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudGodinaIzdanja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

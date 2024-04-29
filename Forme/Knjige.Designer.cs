@@ -62,6 +62,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnDodaj.TabIndex = 2;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnUredi
             // 
@@ -71,6 +72,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnUredi.TabIndex = 3;
             this.btnUredi.Text = "Uredi";
             this.btnUredi.UseVisualStyleBackColor = true;
+            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
             // 
             // btnObriši
             // 
@@ -80,6 +82,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnObriši.TabIndex = 4;
             this.btnObriši.Text = "Obrisi";
             this.btnObriši.UseVisualStyleBackColor = true;
+            this.btnObriši.Click += new System.EventHandler(this.btnObriši_Click);
             // 
             // Knjige
             // 
@@ -93,6 +96,7 @@ namespace Knjiznicaaaaa.Forme
             this.Controls.Add(this.lbKnjige);
             this.Name = "Knjige";
             this.Text = "Knjige";
+            this.Load += new System.EventHandler(this.Knjige_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
