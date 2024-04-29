@@ -53,6 +53,8 @@ namespace Knjiznicaaaaa
                 this.Knjiga.Naslov = tbNaslov.Text;
                 this.Knjiga.GodinaIzdanja = (int)nudGodinaIzdanja.Value;
                 this.Knjiga.BrojPrimjeraka = int.Parse(cbBrojPrimjeraka.Text);
+
+                this.DialogResult = DialogResult.OK;
             }
         }
     }
