@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Knjiznicaaaaa.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +12,12 @@ namespace Knjiznicaaaaa.Forme
 {
     public partial class DetaljiPosudbe : Form
     {
-        public DetaljiPosudbe()
+        public PodatkovniKontekst kontekst;
+        public Posudba Posudba;
+        public DetaljiPosudbe(PodatkovniKontekst kontekst)
         {
             InitializeComponent();
+            this.kontekst = kontekst;
         }
 
         private void label1_Click(object sender, EventArgs e)
