@@ -66,6 +66,7 @@ namespace Knjiznicaaaaa.Forme
             this.btnUredi.TabIndex = 2;
             this.btnUredi.Text = "Uredi";
             this.btnUredi.UseVisualStyleBackColor = true;
+            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
             // 
             // btnVrati
             // 

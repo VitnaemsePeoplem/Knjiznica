@@ -56,5 +56,24 @@ namespace Knjiznicaaaaa.Forme
             formaKnjige.ShowDialog();
 
         }
+
+        private void btnUredi_Click(object sender, EventArgs e)
+        {
+            if (lbPosudbe.SelectedItem == null)
+            {
+                MessageBox.Show("Molim te odaberi posudbu");
+            }
+            else
+            {
+                DetaljiPosudbe detaljiPosudbe = new DetaljiPosudbe(this.kontekst);
+                detaljiPosudbe.Posudba = (Posudba)lbPosudbe.SelectedItem;
+
+                if(detaljiPosudbe.ShowDialog() == DialogResult.OK)
+                {
+                    this.kontekst.SpremiPosudbe();
+                    OsvjeziPosudbe();
+                }
+            }
+        }
     }
 }
